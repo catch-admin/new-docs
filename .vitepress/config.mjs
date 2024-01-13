@@ -8,7 +8,7 @@ export default defineConfig({
   cleanUrls: true,
   themeConfig: {
     editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      pattern: 'https://github.com/catch-admin/new-docs/edit/master/:path',
       text: '在 GitHub 上编辑此页面'
     },
     docFooter: {
@@ -165,6 +165,6 @@ export default defineConfig({
       }
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/catch-admin/new-docs' }]
   }
 })

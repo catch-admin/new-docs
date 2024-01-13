@@ -1,46 +1,40 @@
 {
-  "hash": "36679bb5",
+  "hash": "ca245395",
   "configHash": "8344381a",
-  "lockfileHash": "aa31e34b",
-  "browserHash": "eca14c52",
+  "lockfileHash": "1211ac4c",
+  "browserHash": "b61a5fbc",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "a1ffca2f",
+      "fileHash": "ce064ec7",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "71089ff2",
+      "fileHash": "cf03e9d4",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "b83d2757",
+      "fileHash": "35575400",
       "needsInterop": false
     },
     "sweetalert2": {
       "src": "../../../node_modules/sweetalert2/dist/sweetalert2.all.js",
       "file": "sweetalert2.js",
-      "fileHash": "e8a4fc1a",
+      "fileHash": "9af32e07",
       "needsInterop": true
-    },
-    "axios": {
-      "src": "../../../node_modules/axios/index.js",
-      "file": "axios.js",
-      "fileHash": "62cd8471",
-      "needsInterop": false
     }
   },
   "chunks": {
     "chunk-LWY4TCXG": {
       "file": "chunk-LWY4TCXG.js"
     },
-    "chunk-P2LSHJDD": {
-      "file": "chunk-P2LSHJDD.js"
+    "chunk-Y2F7D3TJ": {
+      "file": "chunk-Y2F7D3TJ.js"
     }
   }
 }
