@@ -25,4 +25,4 @@ jobs:
           SOURCE: '.vitepress/dist/'
           SERVER_PORT: ${{ secrets.SERVER_PORT }}
           TARGET: ${{ secrets.SERVER_WORKDIR }}
-          EXCLUDE: '/build/, /node_modules/'
+          EXCLUDE: '/.vitepress/, /node_modules/'
