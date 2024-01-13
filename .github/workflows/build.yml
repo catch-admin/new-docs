@@ -24,8 +24,8 @@ jobs:
       - name: Build Docs
         run: npm run docs:build
 
-      - name: Remove Old Files on Server
-        run: ssh ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} -p ${{ secrets.SERVER_PORT }} 'rm -rf /www/project/new-doc/*'
+      #- name: Remove Old Files on Server
+      #run: ssh ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} -p ${{ secrets.SERVER_PORT }} 'rm -rf /www/project/new-doc/*'
 
       - name: Upload to Server
         uses: appleboy/scp-action@master
