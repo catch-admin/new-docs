@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Install and Build
+      - name: Install and Builds
         run: |
           yarn install
           yarn docs:build
