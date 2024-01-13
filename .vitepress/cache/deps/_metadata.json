@@ -1,0 +1,46 @@
+{
+  "hash": "36679bb5",
+  "configHash": "8344381a",
+  "lockfileHash": "aa31e34b",
+  "browserHash": "eca14c52",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "a1ffca2f",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "71089ff2",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "b83d2757",
+      "needsInterop": false
+    },
+    "sweetalert2": {
+      "src": "../../../node_modules/sweetalert2/dist/sweetalert2.all.js",
+      "file": "sweetalert2.js",
+      "fileHash": "e8a4fc1a",
+      "needsInterop": true
+    },
+    "axios": {
+      "src": "../../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "62cd8471",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-LWY4TCXG": {
+      "file": "chunk-LWY4TCXG.js"
+    },
+    "chunk-P2LSHJDD": {
+      "file": "chunk-P2LSHJDD.js"
+    }
+  }
+}
