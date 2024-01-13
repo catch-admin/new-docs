@@ -10,13 +10,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Install and Buildsss
+      - name: Install and Builds
         run: |
           yarn install
           yarn docs:build
       - name: Deploy
-        uses: easingthemes/ssh-deploy@v5.0.0
-        with:
+        uses: easingthemes/ssh-deploy@v2.0.7
+        env:
           name: use rsa deploy
           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
           REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
