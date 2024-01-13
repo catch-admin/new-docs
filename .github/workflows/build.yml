@@ -1,38 +1,28 @@
-name: Deploy Docs
-
+name: Build and Deploy
 on:
   push:
     branches:
-      - master # 替换为你的默认分支
-
+      - master
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@master
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build Docs
-        run: npm run docs:build
-
-      #- name: Remove Old Files on Server
-      #run: ssh ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} -p ${{ secrets.SERVER_PORT }} 'rm -rf /www/project/new-doc/*'
-
-      - name: Upload to Server
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USERNAME }}
-          password: ${{ secrets.SERVER_PASSWORD }}
-          port: ${{ secrets.SERVER_PORT }}
-          source: '/new-docs/.vitepress/dist'
-          target: '/www/project/new-doc'
+      - name: Install and Build
+        run: |
+          yarn install
+          yarn build
+      - name: Deploy
+        uses: easingthemes/ssh-deploy@v2.0.7
+        env:
+          name: use rsa deploy
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SECRET }}
+          ARGS: -avz --delete
+          SOURCE: '.vitepress/dist/'
+          SERVER_PORT: ${{ secrets.SERVER_PORT }}
+          TARGET: ${{ secrets.SERVER_WORKDIR }}
+          EXCLUDE: '/build/, /node_modules/'
