@@ -34,5 +34,5 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
-          source: '/new-docs/.vitepress/dist/'
+          source: '/home/runner/work/new-docs/new-docs/.vitepress/dist/'
           target: '/www/project/new-doc'
