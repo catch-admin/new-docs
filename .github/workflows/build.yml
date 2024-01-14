@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Install and Build
+      - name: Install and Builds
         run: |
           yarn install
           yarn docs:build
@@ -25,10 +25,3 @@ jobs:
           REMOTE_PORT: ${{ secrets.SERVER_PORT }}
           TARGET: ${{ secrets.SERVER_WORKDIR }}
           EXCLUDE: '/docs/.vitepress/, /node_modules/'
-          SCRIPT_BEFORE: |
-            whoami
-            ls -al
-          SCRIPT_AFTER: |
-            whoami
-            ls -al
-            echo $RSYNC_STDOUT
