@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Install and Builds
+      - name: Install and Build
         run: |
           yarn install
           yarn docs:build
@@ -24,4 +24,4 @@ jobs:
           SOURCE: 'docs/.vitepress/dist/'
           REMOTE_PORT: ${{ secrets.SERVER_PORT }}
           TARGET: ${{ secrets.SERVER_WORKDIR }}
-          EXCLUDE: '/docs/.vitepress/, /node_modules/'
+          EXCLUDE: '/docs/.vitepress/, /node_modules/, /.github,/.git'
