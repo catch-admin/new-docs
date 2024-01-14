@@ -71,11 +71,13 @@ protected array $defaultCasts = [
 ];
 ```
 
-#### 这里有人肯定会有疑问？为什么要非要加一个 `defaultCasts` 属性呢？为什么不直接用 `casts`？
+> 这里有人肯定会有疑问？为什么要非要加一个 `defaultCasts` 属性呢？为什么不直接用 `casts`？
 
+:::tip
 因为所有模型都是继承`CatchAdmin`, 并且这个日期转换基本每个模型都会用得到。所以一旦这里如果设置成 `casts`, 有可能会被用户自定义的 `casts` 覆盖。还有一个 `defualtHidden`属性是一个道理
+:::
 
-#### 软删除
+## 软删除
 
 由于`CatchAdmin` 软删除默认值是**0**，所以软删除的查询条件也必须改变。在 `CatchModel` 引入 `SoftDeleteScope`，当然使用还是和原本是一样的，无需改动
 
@@ -89,7 +91,7 @@ class SoftDelete extends SoftDeletingScope
 }
 ```
 
-### 属性
+## 属性
 
 除了上面的改变，`CatchAdmin` 还新增了若干属性，以增强项目的粘合性。
 
@@ -129,19 +131,19 @@ class SoftDelete extends SoftDeletingScope
 
 ## 模型方法
 
-### 列表
+## 列表
 
 ```php
 public function getList(): miexed
 ```
 
-### 保存数据
+## 保存数据
 
 ```php
 public function storeBy(array $data): bool`
 ```
 
-### 保存数据
+## 保存数据
 
 ```php
 public function createBy(array $data): mixed
@@ -151,15 +153,13 @@ public function createBy(array $data): mixed
 该方法可用于循环插入数据，`storeBy` 则不行
 :::
 
-### 更新数据
+## 更新数据
 
 ```php
 public function updateBy($id, array $data): mixed
 ```
 
-###
-
-### 查询数据
+## 查询数据
 
 ```php
 public function firstBy($value, $field = null, array $columns = ['*']): ?Model
@@ -167,7 +167,7 @@ public function firstBy($value, $field = null, array $columns = ['*']): ?Model
 
 默认使用 `id` 字段查询
 
-### 删除数据
+## 删除数据
 
 ```php
 public function deleteBy($id, bool $force = false): ?bool
@@ -175,7 +175,7 @@ public function deleteBy($id, bool $force = false): ?bool
 
 默认使用 `id` 字段的 `value` 删除，`force` 参数则进行物理删除
 
-### 状态切换
+## 状态切换
 
 ```php
 public function toggleBy($id, string $field = 'status'): bool
@@ -183,25 +183,25 @@ public function toggleBy($id, string $field = 'status'): bool
 
 通过 `ID` 进行状态切换，默认是 `status` 字段
 
-### 处理树状数据的下级数据
+## 处理树状数据的下级数据
 
 ```php
 public function updateChildren(mixed $parentId, string $field, mixed $value): void
 ```
 
-### 字段别名
+## 字段别名
 
 ```php
 public function aliasField(string|array $fields): string|array
 ```
 
-### 设置 ceator_id
+## 设置 ceator_id
 
 ```php
 public function setCreatorId()
 ```
 
-### 获取创建人
+## 获取创建人
 
 ```php
 public function scopeCreator();
@@ -215,13 +215,13 @@ Model::select('*')->creator()->get();
 
 当然使用该查询，数据表里面必须包含`creator_id`字段，即创建人字段，否则没有作用
 
-### 模糊查询
+## 模糊查询
 
 ```php
 public function whereLike($field, $value)
 ```
 
-### 快速查询
+## 快速查询
 
 ```php
 public function quickSearch(array $params = [])
@@ -246,7 +246,7 @@ Model::select('*')
     ->get();
 ```
 
-### 开启事务
+## 开启事务
 
 之前都需要引入开启事务，例如
 

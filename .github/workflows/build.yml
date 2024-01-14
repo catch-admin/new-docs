@@ -15,14 +15,20 @@ jobs:
           yarn install
           yarn docs:build
       - name: Deploy
-        uses: easingthemes/ssh-deploy@v5.0.2
+        uses: easingthemes/ssh-deploy@v5.0.0
         with:
-          name: use rsa deploy
           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
           REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SECRET }}
-          ARGS: -avz --delete
-          SOURCE: '.vitepress/dist/'
-          SERVER_PORT: ${{ secrets.SERVER_PORT }}
+          ARGS: -avzr --delete
+          SOURCE: 'docs/.vitepress/dist/'
+          REMOTE_PORT: ${{ secrets.SERVER_PORT }}
           TARGET: ${{ secrets.SERVER_WORKDIR }}
-          EXCLUDE: '/.vitepress/, /node_modules/'
+          EXCLUDE: '/docs/.vitepress/, /node_modules/'
+          SCRIPT_BEFORE: |
+            whoami
+            ls -al
+          SCRIPT_AFTER: |
+            whoami
+            ls -al
+            echo $RSYNC_STDOUT

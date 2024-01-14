@@ -18,19 +18,19 @@ http.put(path: string, data: object = {})
 http.delete(path: string)
 ```
 
-### 设置超时
+## 设置超时
 
 ```typescript
 Http.timeout(5).get()
 ```
 
-### 设置 BASEURL
+## 设置 BASEURL
 
 ```typescript
 Http.setBaseUrl('https://api.com').get()
 ```
 
-### 设置 header
+## 设置 header
 
 ```typescript
 Http.setHeader(key:string, value:string).get()
@@ -40,7 +40,7 @@ Http.setHeader(key:string, value:string).get()
 
 表单请求则使用了 `vue3` 的新特性 `hooks`，也称为[组合式函数](https://cn.vuejs.org/guide/reusability/composables.html)。查看 `resource/admin/composables/curd`，总共提供六个操作。
 
-### GetList
+## GetList
 
 `getList` 请求列表数据
 
@@ -57,7 +57,7 @@ const tableData = computed(() => data.value?.data)
 - reset() 重制方法
 - loading:boolean 列表请求 loading
 
-### Create
+## Create
 
 **create** 其实包含两个操作，创建和更新，当 **props.primary** 是 **null** 的时候，就是创建数据不为空时，则是更新数据
 
@@ -80,7 +80,7 @@ close(() => emit('close'))
 - submitForm(form) 点击提交表单的方法, 参数就是 `form`
 - close 关闭弹窗
 
-### Destroy
+## Destroy
 
 ```typescript
 const { destroy, deleted } = useDestroy()
@@ -93,7 +93,7 @@ onMounted(() => {
 - destory(path: string, id: string | number) 删除数据的方法，一般都是用于列表删除数据
 - deleted(callback: Function) 观测数据是否删除，参数删除后的回调操作
 
-### Enabled
+## Enabled
 
 `enabled` 作用就是请求状态切换
 
@@ -110,7 +110,7 @@ const { enabled, success, loading, afterEnabled } = useEnabled()
 afterEnabled.value = () => {}
 ```
 
-### Open
+## Open
 
 打开 `Dialog` 弹窗，一般用于通过`Dialog` **创建/更新**数据的时候
 
@@ -124,7 +124,7 @@ const { open, close, title, visible, id } = useOpen()
 - visible: boolean Dialog 状态
 - id 数据的 ID
 
-### Show
+## Show
 
 show 方法就是拉取更新时的数据，填充表单
 

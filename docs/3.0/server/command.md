@@ -6,13 +6,13 @@
 php artisan | grep catch
 ```
 
-### 查看版本号
+## 查看版本号
 
 ```shell
 php artisan catch:version
 ```
 
-### 项目安装
+## 项目安装
 
 ```shell
 php artisan catch:install
@@ -20,7 +20,7 @@ php artisan catch:install
 
 该命令是用于初始化项目
 
-### 模块安装
+## 模块安装
 
 ```shell
 php artisan catch:module:install <module>
@@ -34,19 +34,19 @@ php artisan catch:module:install <module>
 php artisan catch:module:install <permissions>
 ```
 
-### 创建 Migrate 文件
+## 创建 Migrate 文件
 
 ```shell
 php artisan catch:make:migration <module> <migration_name>
 ```
 
-### 创建 Seed 文件
+## 创建 Seed 文件
 
 ```shell
 php artisan catch:make:seeder <module> <seeder_name>
 ```
 
-### 执行 Migrate
+## 执行 Migrate
 
 ```shell
 php artisan catch:migrate <module>
@@ -58,7 +58,7 @@ php artisan catch:migrate <module>
 php artisan catch:migrate permissions
 ```
 
-### 执行 Seed
+## 执行 Seed
 
 ```shell
 php artisan catch:db:seed <module>
@@ -70,7 +70,7 @@ php artisan catch:db:seed <module>
 php artisan catch:migrate permissions
 ```
 
-### 导出模块相关的菜单
+## 导出模块相关的菜单
 
 ```shell
 php artisan catch:export:menu <module> <table?>
@@ -84,7 +84,7 @@ php artisan catch:export:menu <module> <table?>
 php artisan catch:export:menu permissions
 ```
 
-### 生成模型
+## 生成模型
 
 ```shell
 php artisan catch:make:model <module> <modelName> <table?>
@@ -118,7 +118,7 @@ class Users extends Model
 添加非常有用的三个指令，这三个指令会分离前后端路由，从而加速应用的访问速度。实验性功能
 :::
 
-### 路由缓存
+## 路由缓存
 
 ```shell
 php artisan catch:route:cache
@@ -126,13 +126,13 @@ php artisan catch:route:cache
 
 这个命令会将前后台路由分开缓存
 
-### 路由缓存清理
+## 路由缓存清理
 
 ```shell
 php artisan catch:route:clear
 ```
 
-### 路由列表
+## 路由列表
 
 ```shell
 php artisan catch:route:list
