@@ -4,7 +4,6 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'CatchAdmin',
   description: 'CatchAdmin',
-  assetsDir: 'docs/assets',
   cleanUrls: true,
   rewrites: {
     '2.0/(.*)': 'docs/(.*)',
