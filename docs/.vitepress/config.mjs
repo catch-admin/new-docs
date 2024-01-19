@@ -6,87 +6,103 @@ export default defineConfig({
   description: 'CatchAdmin',
   assetsDir: 'docs/assets',
   cleanUrls: true,
+  rewrites: {
+    '2.0/(.*)': 'docs/(.*)',
+    '2.0/catchadmin/(.*)': 'docs/catchadmin/(.*)',
+    '3.0/(.*)': 'docs/3.0/(.*)',
+    '3.0/start/(.*)': 'docs/3.0/start/(.*)',
+    '3.0/server/(.*)': 'docs/3.0/server/(.*)',
+    '3.0/front/(.*)': 'docs/3.0/front/(.*)'
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {
         text: '版本',
         items: [
-          { text: '2.6', link: '/intro' },
-          { text: '3.0', link: '/3.0/intro' }
+          { text: '2.6', link: '/docs/intro' },
+          { text: '3.0', link: 'docs/3.0/intro' }
           // 添加其他版本链接...
         ]
       }
     ],
 
     sidebar: {
-      '/': {
-        base: '',
+      '/docs/': {
         items: [
-          { text: '介绍', link: '/intro' },
+          { text: '介绍', link: '/docs/intro.md' },
           {
             text: '项目介绍',
             items: [
-              { text: '项目安装', link: '/catchadmin/install' },
-              { text: '项目目录', link: '/catchadmin/project-intro' },
-              { text: '命令介绍', link: '/catchadmin/console' },
-              { text: '请求介绍', link: '/catchadmin/request' },
-              { text: '模型介绍', link: '/catchadmin/model' },
-              { text: '权限介绍', link: '/catchadmin/data-scope' },
-              { text: '项目扩展', link: '/catchadmin/extend' },
-              { text: 'HTTP客户端', link: '/catchadmin/http' },
-              { text: '导出Excel', link: '/catchadmin/export-excel' },
-              { text: '敏感词', link: '/catchadmin/sensitive-word' },
-              { text: '定时任务', link: '/catchadmin/crontab' },
-              { text: '表格组件', link: '/catchadmin/catch-table' },
-              { text: '前端开发', link: '/catchadmin/front' }
+              { text: '项目安装', link: '/docs/catchadmin/install.md' },
+              { text: '项目目录', link: '/docs/catchadmin/project-intro.md' },
+              { text: '命令介绍', link: '/docs/catchadmin/console.md' },
+              { text: '请求介绍', link: '/docs/catchadmin/request.md' },
+              { text: '模型介绍', link: '/docs/catchadmin/model.md' },
+              { text: '权限介绍', link: '/docs/catchadmin/data-scope.md' },
+              { text: '项目扩展', link: '/docs/catchadmin/extend.md' },
+              { text: 'HTTP客户端', link: '/docs/catchadmin/http.md' },
+              { text: '导出Excel', link: '/docs/catchadmin/export-excel.md' },
+              { text: '敏感词', link: '/docs/catchadmin/sensitive-word.md' },
+              { text: '定时任务', link: '/docs/catchadmin/crontab.md' },
+              { text: '表格组件', link: '/docs/catchadmin/catch-table.md' },
+              { text: '前端开发', link: '/docs/catchadmin/front.md' }
             ]
           },
           {
-            text: '常见问题',
-            link: '/faq'
+            text: '综合',
+            items: [
+              {
+                text: '常见问题',
+                link: '/docs/faq.md'
+              }
+            ]
           }
         ]
       },
-      '/3.0/': {
-        base: '3.0/',
+      '/docs/3.0/': {
         items: [
-          { text: '介绍', link: '/intro' },
+          { text: '介绍', link: '/docs/3.0/intro.md' },
           {
             text: '项目文档',
             items: [
-              { text: '项目安装', link: '/catchadmin/install' },
-              { text: '项目介绍', link: '/catchadmin/project_intro' }
+              { text: '项目安装', link: '/docs/3.0/start/install.md' },
+              { text: '项目介绍', link: '/docs/3.0/start/project_intro.md' }
             ]
           },
           {
             text: '服务端',
             items: [
-              { text: '配置', link: '/server/config' },
-              { text: '约定', link: '/server/promise' },
-              { text: '模块化', link: '/server/modules' },
-              { text: '模型介绍', link: '/server/model' },
-              { text: '权限介绍', link: '/server/permission' },
-              { text: '数据权限', link: '/server/data_permission' },
-              { text: '代码生成', link: '/server/generate' },
-              { text: '命令介绍', link: '/server/command' },
-              { text: '小技巧', link: '/server/tips' }
+              { text: '配置', link: '/docs/3.0/server/config.md' },
+              { text: '约定', link: '/docs/3.0/server/promise.md' },
+              { text: '模块化', link: '/docs/3.0/server/modules.md' },
+              { text: '模型介绍', link: '/docs/3.0/server/model.md' },
+              { text: '权限介绍', link: '/docs/3.0/server/permission.md' },
+              { text: '数据权限', link: '/docs/3.0/server/data_permission.md' },
+              { text: '代码生成', link: '/docs/3.0/server/generate.md' },
+              { text: '命令介绍', link: '/docs/3.0/server/command.md' },
+              { text: '小技巧', link: '/docs/3.0/server/tips.md' }
             ]
           },
           {
             text: '前端',
             items: [
-              { text: '简介', link: '/front/intro' },
-              { text: '入口', link: '/front/entry' },
-              { text: '布局', link: '/front/layout' },
-              { text: '侧边栏&路由', link: '/front/side-menu' },
-              { text: '权限认证', link: '/front/permissions' },
-              { text: '样式', link: '/front/style' },
-              { text: '请求', link: '/front/request' }
+              { text: '简介', link: '/docs/3.0/front/intro' },
+              { text: '入口', link: '/docs/3.0/front/entry' },
+              { text: '布局', link: '/docs/3.0/front/layout' },
+              { text: '侧边栏&路由', link: '/docs/3.0/front/side-menu' },
+              { text: '权限认证', link: '/docs/3.0/front/permissions' },
+              { text: '样式', link: '/docs/3.0/front/style' },
+              { text: '请求', link: '/docs/3.0/front/request' }
             ]
           },
-          { text: '视频教程', link: '/video' },
-          { text: '常见问题', link: '/faq' }
+          {
+            text: '综合',
+            items: [
+              { text: '视频教程', link: '/docs/3.0/video' },
+              { text: '常见问题', link: '/docs/3.0/faq' }
+            ]
+          }
         ]
       }
     },
