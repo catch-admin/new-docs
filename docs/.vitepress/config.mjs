@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
-const root = 'docs'
-const version2root = 'docs/catchadmin'
-const version3root = 'docs/3.0'
+const root = '/docs'
+const version2root = `${root}/catchadmin`
+const version3root = `${root}/3.0`
 const version3server = `${version3root}/server`
 const version3start = `${version3root}/start`
 const version3front = `${version3root}/front`
@@ -81,7 +81,7 @@ export default defineConfig({
             items: [
               { text: '配置', link: `${version3server}/config.md` },
               { text: '约定', link: `${version3server}/promise.md` },
-              { text: '模块化', link: `${version3server}r/modules.md` },
+              { text: '模块化', link: `${version3server}/modules.md` },
               { text: '模型介绍', link: `${version3server}/model.md` },
               { text: '权限介绍', link: `${version3server}/permission.md` },
               { text: '数据权限', link: `${version3server}/data_permission.md` },
