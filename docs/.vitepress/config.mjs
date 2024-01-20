@@ -1,5 +1,11 @@
 import { defineConfig } from 'vitepress'
 
+const root = 'docs'
+const version2root = 'docs/catchadmin'
+const version3root = 'docs/3.0'
+const version3server = `${version3root}/server`
+const version3start = `${version3root}/start`
+const version3front = `${version3root}/front`
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'CatchAdmin',
@@ -20,8 +26,8 @@ export default defineConfig({
       {
         text: '版本',
         items: [
-          { text: '2.6', link: '/docs/intro' },
-          { text: '3.0', link: 'docs/3.0/intro' }
+          { text: '2.6', link: `${root}/intro` },
+          { text: '3.0', link: `${version3root}/intro` }
           // 添加其他版本链接...
         ]
       }
@@ -30,23 +36,23 @@ export default defineConfig({
     sidebar: {
       '/docs/': {
         items: [
-          { text: '介绍', link: '/docs/intro.md' },
+          { text: '介绍', link: `${root}/intro.md` },
           {
             text: '项目介绍',
             items: [
-              { text: '项目安装', link: '/docs/catchadmin/install.md' },
-              { text: '项目目录', link: '/docs/catchadmin/project-intro.md' },
-              { text: '命令介绍', link: '/docs/catchadmin/console.md' },
-              { text: '请求介绍', link: '/docs/catchadmin/request.md' },
-              { text: '模型介绍', link: '/docs/catchadmin/model.md' },
-              { text: '权限介绍', link: '/docs/catchadmin/data-scope.md' },
-              { text: '项目扩展', link: '/docs/catchadmin/extend.md' },
-              { text: 'HTTP客户端', link: '/docs/catchadmin/http.md' },
-              { text: '导出Excel', link: '/docs/catchadmin/export-excel.md' },
-              { text: '敏感词', link: '/docs/catchadmin/sensitive-word.md' },
-              { text: '定时任务', link: '/docs/catchadmin/crontab.md' },
-              { text: '表格组件', link: '/docs/catchadmin/catch-table.md' },
-              { text: '前端开发', link: '/docs/catchadmin/front.md' }
+              { text: '项目安装', link: `${version2root}/install.md` },
+              { text: '项目目录', link: `${version2root}/project-intro.md` },
+              { text: '命令介绍', link: `${version2root}/console.md` },
+              { text: '请求介绍', link: `${version2root}/request.md` },
+              { text: '模型介绍', link: `${version2root}/model.md` },
+              { text: '权限介绍', link: `${version2root}/data-scope.md` },
+              { text: '项目扩展', link: `${version2root}/extend.md` },
+              { text: 'HTTP客户端', link: `${version2root}/http.md` },
+              { text: '导出Excel', link: `${version2root}/export-excel.md` },
+              { text: '敏感词', link: `${version2root}/sensitive-word.md` },
+              { text: '定时任务', link: `${version2root}/crontab.md` },
+              { text: '表格组件', link: `${version2root}/catch-table.md` },
+              { text: '前端开发', link: `${version2root}/front.md` }
             ]
           },
           {
@@ -54,7 +60,7 @@ export default defineConfig({
             items: [
               {
                 text: '常见问题',
-                link: '/docs/faq.md'
+                link: `${root}/faq.md`
               }
             ]
           }
@@ -62,45 +68,45 @@ export default defineConfig({
       },
       '/docs/3.0/': {
         items: [
-          { text: '介绍', link: '/docs/3.0/intro.md' },
+          { text: '介绍', link: `${version3root}/intro.md` },
           {
             text: '项目文档',
             items: [
-              { text: '项目安装', link: '/docs/3.0/start/install.md' },
-              { text: '项目介绍', link: '/docs/3.0/start/project_intro.md' }
+              { text: '项目安装', link: `${version3start}/install.md` },
+              { text: '项目介绍', link: `${version3start}/project_intro.md` }
             ]
           },
           {
             text: '服务端',
             items: [
-              { text: '配置', link: '/docs/3.0/server/config.md' },
-              { text: '约定', link: '/docs/3.0/server/promise.md' },
-              { text: '模块化', link: '/docs/3.0/server/modules.md' },
-              { text: '模型介绍', link: '/docs/3.0/server/model.md' },
-              { text: '权限介绍', link: '/docs/3.0/server/permission.md' },
-              { text: '数据权限', link: '/docs/3.0/server/data_permission.md' },
-              { text: '代码生成', link: '/docs/3.0/server/generate.md' },
-              { text: '命令介绍', link: '/docs/3.0/server/command.md' },
-              { text: '小技巧', link: '/docs/3.0/server/tips.md' }
+              { text: '配置', link: `${version3server}/config.md` },
+              { text: '约定', link: `${version3server}/promise.md` },
+              { text: '模块化', link: `${version3server}r/modules.md` },
+              { text: '模型介绍', link: `${version3server}/model.md` },
+              { text: '权限介绍', link: `${version3server}/permission.md` },
+              { text: '数据权限', link: `${version3server}/data_permission.md` },
+              { text: '代码生成', link: `${version3server}/generate.md` },
+              { text: '命令介绍', link: `${version3server}/command.md` },
+              { text: '小技巧', link: `${version3server}/tips.md` }
             ]
           },
           {
             text: '前端',
             items: [
-              { text: '简介', link: '/docs/3.0/front/intro' },
-              { text: '入口', link: '/docs/3.0/front/entry' },
-              { text: '布局', link: '/docs/3.0/front/layout' },
-              { text: '侧边栏&路由', link: '/docs/3.0/front/side-menu' },
-              { text: '权限认证', link: '/docs/3.0/front/permissions' },
-              { text: '样式', link: '/docs/3.0/front/style' },
-              { text: '请求', link: '/docs/3.0/front/request' }
+              { text: '简介', link: `${version3front}/intro.md` },
+              { text: '入口', link: `${version3front}/entry.md` },
+              { text: '布局', link: `${version3front}/layout.md` },
+              { text: '侧边栏&路由', link: `${version3front}/side-menu.md` },
+              { text: '权限认证', link: `${version3front}/permissions.md` },
+              { text: '样式', link: `${version3front}/style.md` },
+              { text: '请求', link: `${version3front}/request.md` }
             ]
           },
           {
             text: '综合',
             items: [
-              { text: '视频教程', link: '/docs/3.0/video' },
-              { text: '常见问题', link: '/docs/3.0/faq' }
+              { text: '视频教程', link: `${version3root}/video.md` },
+              { text: '常见问题', link: `${version3root}/faq.md` }
             ]
           }
         ]
