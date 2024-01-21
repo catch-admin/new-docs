@@ -10,7 +10,7 @@ const version3front = `${version3root}/front`
 export default defineConfig({
   title: 'CatchAdmin',
   description: 'CatchAdmin',
-  base: 'https://catchadmin.com/',
+  base: '/',
   assetsDir: 'docs/assets',
   cleanUrls: true,
   rewrites: {
