@@ -172,12 +172,12 @@ export default defineConfig({
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
     editLink: {
-      pattern: 'https://github.com/catch-admin/new-docs/edit/master/:path',
+      pattern: 'https://github.com/catch-admin/new-docs/edit/master/docs/:path',
       text: '在 GitHub 上编辑此页面'
     },
     docFooter: {
-      prev: false,
-      next: false
+      prev: '上一页',
+      next: '下一页'
     },
     outline: {
       label: '页面导航'
