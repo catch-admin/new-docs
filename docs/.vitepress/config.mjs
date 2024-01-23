@@ -9,8 +9,8 @@ const version3front = `${version3root}/front`
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'CatchAdmin',
-  description: 'CatchAdmin',
-  base: '/',
+  description: 'CatchAdmin后台管理系统文档',
+  base: 'https://catchadmin.com/',
   assetsDir: 'docs/assets',
   cleanUrls: true,
   rewrites: {

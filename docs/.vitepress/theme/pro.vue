@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mt-10 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+    class="mt-10 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 transition hover:bg-[length:400%_400%] hover:shadow-xl hover:[animation-duration:_4s]">
     <div class="rounded-[10px] bg-white p-[1px] sm:p-[1px]">
       <img src="./images/pro.jpg" class="rounded-[10px]" />
       <div class="block m-2 text-lg text-gray-500">CatchAdmin专业版🎉</div>
@@ -20,3 +20,16 @@
     </div>
   </div>
 </template>
+<script setup>
+/** 
+import confetti from 'canvas-confetti'
+
+confetti({
+  particleCount: 100,
+  spread: 70,
+  origin: {
+    x: '700px',
+    y: '900px'
+  }
+})*/
+</script>

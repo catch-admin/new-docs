@@ -5,8 +5,9 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "canvas-confetti": "^1.9.2",
     "sweetalert2": "^11.10.3",
-    "vitepress": "^1.0.0-rc.36"
+    "vitepress": "^1.0.0-rc.40"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.2.17",
