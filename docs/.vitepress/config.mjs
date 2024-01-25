@@ -22,6 +22,12 @@ export default defineConfig({
     '3.0/front/(.*)': 'docs/3.0/front/(.*)'
   },
   themeConfig: {
+    onContentUpdated: (content) => {
+      console.log('Content updated:', content)
+
+      // 在这里执行你的自定义逻辑
+      // 例如，触发某个事件、更新状态等
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {
