@@ -8,9 +8,8 @@ const version3start = `${version3root}/start`
 const version3front = `${version3root}/front`
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'CatchAdmin',
+  title: 'CatchAdmin文档',
   description: 'CatchAdmin后台管理系统文档',
-  base: '/',
   assetsDir: 'docs/assets',
   cleanUrls: true,
   rewrites: {
@@ -30,6 +29,11 @@ export default defineConfig({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
+      {
+        text: '官网',
+        link: 'https://catchadmin.com/',
+        target: '_self'
+      },
       {
         text: '专业版文档',
         link: 'https://catchadmin.com/pro/docs'

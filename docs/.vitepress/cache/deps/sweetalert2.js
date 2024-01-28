@@ -9,6 +9,27 @@ var require_sweetalert2_all = __commonJS({
       typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define(factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, global.Sweetalert2 = factory());
     })(exports, function() {
       "use strict";
+      function _callSuper(t, o, e) {
+        return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e));
+      }
+      function _construct(t, e, r) {
+        if (_isNativeReflectConstruct())
+          return Reflect.construct.apply(null, arguments);
+        var o = [null];
+        o.push.apply(o, e);
+        var p = new (t.bind.apply(t, o))();
+        return r && _setPrototypeOf(p, r.prototype), p;
+      }
+      function _isNativeReflectConstruct() {
+        try {
+          var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
+          }));
+        } catch (t2) {
+        }
+        return (_isNativeReflectConstruct = function() {
+          return !!t;
+        })();
+      }
       function _iterableToArrayLimit(r, l) {
         var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
         if (null != t) {
@@ -114,37 +135,6 @@ var require_sweetalert2_all = __commonJS({
         };
         return _setPrototypeOf(o, p);
       }
-      function _isNativeReflectConstruct() {
-        if (typeof Reflect === "undefined" || !Reflect.construct)
-          return false;
-        if (Reflect.construct.sham)
-          return false;
-        if (typeof Proxy === "function")
-          return true;
-        try {
-          Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
-          }));
-          return true;
-        } catch (e) {
-          return false;
-        }
-      }
-      function _construct(Parent, args, Class) {
-        if (_isNativeReflectConstruct()) {
-          _construct = Reflect.construct.bind();
-        } else {
-          _construct = function _construct2(Parent2, args2, Class2) {
-            var a = [null];
-            a.push.apply(a, args2);
-            var Constructor = Function.bind.apply(Parent2, a);
-            var instance = new Constructor();
-            if (Class2)
-              _setPrototypeOf(instance, Class2.prototype);
-            return instance;
-          };
-        }
-        return _construct.apply(null, arguments);
-      }
       function _assertThisInitialized(self2) {
         if (self2 === void 0) {
           throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -158,19 +148,6 @@ var require_sweetalert2_all = __commonJS({
           throw new TypeError("Derived constructors may only return object or undefined");
         }
         return _assertThisInitialized(self2);
-      }
-      function _createSuper(Derived) {
-        var hasNativeReflectConstruct = _isNativeReflectConstruct();
-        return function _createSuperInternal() {
-          var Super = _getPrototypeOf(Derived), result;
-          if (hasNativeReflectConstruct) {
-            var NewTarget = _getPrototypeOf(this).constructor;
-            result = Reflect.construct(Super, arguments, NewTarget);
-          } else {
-            result = Super.apply(this, arguments);
-          }
-          return _possibleConstructorReturn(this, result);
-        };
       }
       function _superPropBase(object, property) {
         while (!Object.prototype.hasOwnProperty.call(object, property)) {
@@ -1170,9 +1147,9 @@ var require_sweetalert2_all = __commonJS({
         icon.style.borderColor = params.iconColor;
         for (var _i2 = 0, _arr = [".swal2-success-line-tip", ".swal2-success-line-long", ".swal2-x-mark-line-left", ".swal2-x-mark-line-right"]; _i2 < _arr.length; _i2++) {
           var sel = _arr[_i2];
-          setStyle(icon, sel, "backgroundColor", params.iconColor);
+          setStyle(icon, sel, "background-color", params.iconColor);
         }
-        setStyle(icon, ".swal2-success-ring", "borderColor", params.iconColor);
+        setStyle(icon, ".swal2-success-ring", "border-color", params.iconColor);
       };
       var iconContent = function iconContent2(content) {
         return '<div class="'.concat(swalClasses["icon-content"], '">').concat(content, "</div>");
@@ -2424,10 +2401,9 @@ var require_sweetalert2_all = __commonJS({
       function mixin(mixinParams) {
         var MixinSwal = function(_this2) {
           _inherits(MixinSwal2, _this2);
-          var _super = _createSuper(MixinSwal2);
           function MixinSwal2() {
             _classCallCheck(this, MixinSwal2);
-            return _super.apply(this, arguments);
+            return _callSuper(this, MixinSwal2, arguments);
           }
           _createClass(MixinSwal2, [{
             key: "_main",
@@ -3093,7 +3069,7 @@ var require_sweetalert2_all = __commonJS({
         };
       });
       SweetAlert.DismissReason = DismissReason;
-      SweetAlert.version = "11.10.3";
+      SweetAlert.version = "11.10.4";
       var Swal = SweetAlert;
       Swal["default"] = Swal;
       return Swal;
@@ -3119,7 +3095,7 @@ export default require_sweetalert2_all();
 
 sweetalert2/dist/sweetalert2.all.js:
   (*!
-  * sweetalert2 v11.10.3
+  * sweetalert2 v11.10.4
   * Released under the MIT License.
   *)
 */
