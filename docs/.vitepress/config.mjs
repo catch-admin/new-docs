@@ -31,6 +31,10 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {
+        text: '专业版文档',
+        link: 'https://catchadmin.com/pro/docs'
+      },
+      {
         text: '版本',
         items: [
           { text: '2.6', link: `${root}/intro` },
