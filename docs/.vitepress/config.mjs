@@ -12,6 +12,20 @@ export default defineConfig({
   description: 'CatchAdmin后台管理系统文档',
   assetsDir: 'docs/assets',
   cleanUrls: true,
+  head: [
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ETX73YSQ1V' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ETX73YSQ1V');`
+    ]
+  ]
   rewrites: {
     '2.0/(.*)': 'docs/(.*)',
     '2.0/catchadmin/(.*)': 'docs/catchadmin/(.*)',
