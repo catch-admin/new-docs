@@ -13,10 +13,7 @@ export default defineConfig({
   assetsDir: 'docs/assets',
   cleanUrls: true,
   head: [
-    [
-      'script',
-      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ETX73YSQ1V' }
-    ],
+    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ETX73YSQ1V' }],
     [
       'script',
       {},
@@ -25,7 +22,7 @@ export default defineConfig({
       gtag('js', new Date());
       gtag('config', 'G-ETX73YSQ1V');`
     ]
-  ]
+  ],
   rewrites: {
     '2.0/(.*)': 'docs/(.*)',
     '2.0/catchadmin/(.*)': 'docs/catchadmin/(.*)',
