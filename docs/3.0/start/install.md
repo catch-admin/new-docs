@@ -135,10 +135,12 @@ http {
 server
 {
     listen  443  ssl http2;
-    server_name catchadmin.com;
+    // 配置自己域名
+    server_name server.com;
     index admin.html index.html index.php index.htm default.php default.htm default.html;
     root root_path;
 
+    ## SSL 证书
     ssl_certificate     pem_path;  # pem文件的路径
     ssl_certificate_key  key_path; # key文件的路径
     ssl_session_timeout  5m;    #缓存有效期
@@ -154,7 +156,7 @@ server
     }
 
    location / {
-     root admin_root_path;
+     root admin_root_path; // 配置前端根目录地址
      try_files $uri $uri/ /admin.html;
    }
 
@@ -162,7 +164,7 @@ server
     location ~ \.php$ {
         try_files $uri /index.php =404;
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
-        fastcgi_pass v3:9000;
+        fastcgi_pass 127.0.0.1:9000;
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
