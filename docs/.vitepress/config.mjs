@@ -14,7 +14,7 @@ export default defineConfig({
   cleanUrls: true,
   head: [
     ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ETX73YSQ1V' }],
-    ['script', { async: '', src: '/star.js' }],
+    ['script', { async: '', src: '/docs/assets/star.js' }],
     [
       'script',
       {},
