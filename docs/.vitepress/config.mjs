@@ -20,16 +20,12 @@ export default defineConfig({
       `window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-ETX73YSQ1V');`
-    ],
-    [
-      'script',
-      {},
-      `setTimeout(() => {
-          let title = document.querySelector('.VPNavBarTitle .title')
-          title.href = 'https://catchadmin.com/'
-      }, 500)
-  `
+      gtag('config', 'G-ETX73YSQ1V');
+      setTimeout(() => {
+        let title = document.querySelector('.VPNavBarTitle .title')
+        title.href = 'https://catchadmin.com/'
+      }, 1000);
+      `
     ]
   ],
   rewrites: {
