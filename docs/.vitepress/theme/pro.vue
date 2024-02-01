@@ -21,6 +21,8 @@
   </div>
 </template>
 <script setup>
+const title = document.querySelector('.VPNavBarTitle .title')
+title.href = 'https://catchadmin.com/'
 /** 
 import confetti from 'canvas-confetti'
 

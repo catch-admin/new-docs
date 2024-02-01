@@ -21,10 +21,6 @@ export default defineConfig({
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-ETX73YSQ1V');
-      setTimeout(() => {
-        let title = document.querySelector('.VPNavBarTitle .title')
-        title.href = 'https://catchadmin.com/'
-      }, 1000);
       `
     ]
   ],
