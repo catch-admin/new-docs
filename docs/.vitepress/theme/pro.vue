@@ -21,15 +21,6 @@
   </div>
 </template>
 <script setup>
-setTimeout(() => {
-  const title = document.querySelector('.VPNavBarTitle .title')
-
-  title.href = 'javascript:void(0)'
-  title.onclick = () => {
-    window.location.href = 'https://catchadmin.com/'
-  }
-}, 1000)
-
 /** 
 import confetti from 'canvas-confetti'
 
