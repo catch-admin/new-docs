@@ -1,6 +1,4 @@
-<template>
-  <div>asdasd</div>
-</template>
+<template></template>
 <script setup>
 import Swal from 'sweetalert2'
 import { useRoute } from 'vitepress'
