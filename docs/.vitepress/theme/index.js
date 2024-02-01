@@ -5,8 +5,6 @@ import Pro from './pro.vue'
 import Star from './star.vue'
 import NotFound from './notfound.vue'
 import { onContentUpdated } from 'vitepress'
-import { useRoute } from 'vitepress'
-
 export default {
   extends: DefaultTheme,
   Layout() {
@@ -23,6 +21,5 @@ export default {
         console.log(prePath, postPath)
       })
     })
-  },
-  onContentUpdated: onContentUpdated
+  }
 }
