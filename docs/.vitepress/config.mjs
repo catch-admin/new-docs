@@ -152,9 +152,9 @@ export default defineConfig({
     search: {
       provider: 'algolia',
       options: {
-        appId: 'Z82AVC6OQ9',
-        apiKey: '5883216465758859a57ee9d7332d79c3',
-        indexName: 'catchadmin'
+        appId: '1JRPGQ44JC',
+        apiKey: '150489741e0052b72a9dbfc4aca92518',
+        indexName: 'catchadmindocs'
       }
     },
 
