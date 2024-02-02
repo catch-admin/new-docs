@@ -6,6 +6,10 @@ const version3root = `${root}/3.0`
 const version3server = `${version3root}/server`
 const version3start = `${version3root}/start`
 const version3front = `${version3root}/front`
+const api = `${root}/api`
+const apiUser = `${api}/user`
+const apiPermission = `${api}/permission`
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'CatchAdmin文档',
@@ -34,6 +38,7 @@ export default defineConfig({
     ]
   ],
   rewrites: {
+    'api/(.*)': 'docs/api/(.*)',
     '2.0/(.*)': 'docs/(.*)',
     '2.0/catchadmin/(.*)': 'docs/catchadmin/(.*)',
     '3.0/(.*)': 'docs/3.0/(.*)',
@@ -42,18 +47,11 @@ export default defineConfig({
     '3.0/front/(.*)': 'docs/3.0/front/(.*)'
   },
   themeConfig: {
-    onContentUpdated: (content) => {
-      console.log('Content updated:', content)
-
-      // 在这里执行你的自定义逻辑
-      // 例如，触发某个事件、更新状态等
-    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {
-        text: '官网',
-        link: 'https://catchadmin.com/',
-        target: '_self'
+        text: '接口文档',
+        link: '/docs/api/intro'
       },
       {
         text: '专业版文档',
@@ -70,6 +68,71 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/docs/api/': {
+        items: [
+          { text: '介绍', link: `${api}/intro.md` },
+          {
+            text: '认证',
+            items: [
+              { text: '登录', link: `${api}/auth/login.md` },
+              { text: '登出', link: `${api}/auth/logout.md` }
+            ]
+          },
+          {
+            text: '用户管理',
+            collapsed: true,
+            items: [
+              { text: '列表', link: `${apiUser}/index.md` },
+              { text: '新增', link: `${apiUser}/store.md` },
+              { text: '更新', link: `${apiUser}/update.md` },
+              { text: '删除', link: `${apiUser}/delete.md` },
+              { text: '在线', link: `${apiUser}/online.md` },
+              { text: '操作日志', link: `${apiUser}/operatelog.md` },
+              { text: '登录日志', link: `${apiUser}/loginlog.md` }
+            ]
+          },
+          {
+            text: '角色管理',
+            collapsed: true,
+            items: [
+              { text: '列表', link: `${apiPermission}/role/index.md` },
+              { text: '新增', link: `${apiPermission}/role/store.md` },
+              { text: '更新', link: `${apiPermission}/role/update.md` },
+              { text: '删除', link: `${apiPermission}/role/delete.md` }
+            ]
+          },
+          {
+            text: '菜单管理',
+            collapsed: true,
+            items: [
+              { text: '列表', link: `${apiPermission}/permissions/index.md` },
+              { text: '新增', link: `${apiPermission}/permissions/store.md` },
+              { text: '更新', link: `${apiPermission}/permissions/update.md` },
+              { text: '删除', link: `${apiPermission}/permissions/delete.md` }
+            ]
+          },
+          {
+            text: '部门管理',
+            collapsed: true,
+            items: [
+              { text: '列表', link: `${apiPermission}/department/index.md` },
+              { text: '新增', link: `${apiPermission}/department/store.md` },
+              { text: '更新', link: `${apiPermission}/department/update.md` },
+              { text: '删除', link: `${apiPermission}/department/delete.md` }
+            ]
+          },
+          {
+            text: '岗位管理',
+            collapsed: true,
+            items: [
+              { text: '列表', link: `${apiPermission}/job/index.md` },
+              { text: '新增', link: `${apiPermission}/job/store.md` },
+              { text: '更新', link: `${apiPermission}/job/update.md` },
+              { text: '删除', link: `${apiPermission}/job/delete.md` }
+            ]
+          }
+        ]
+      },
       '/docs/': {
         items: [
           { text: '介绍', link: `${root}/intro.md` },
