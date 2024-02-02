@@ -12,7 +12,7 @@ const apiPermission = `${api}/permission`
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'CatchAdmin文档',
+  title: 'CatchAdmin官网',
   description: 'CatchAdmin后台管理系统文档',
   assetsDir: 'docs/assets',
   cleanUrls: true,
