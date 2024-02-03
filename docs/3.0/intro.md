@@ -61,5 +61,5 @@
 - [Laravel](https://laravel.com)
 - [Vue](https://cn.vuejs.org/)
 - [ElementPlus](https://element-plus.org)
-- [Docusaurus](https://docusaurus.com)
+- [Vitepress](https://vitepress.dev/)
 - [JetBrains](https://www.jetbrains.com/)
