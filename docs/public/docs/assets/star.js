@@ -192,4 +192,4 @@ if (path.includes('docs/3.0/intro') && code) {
   }, 1000)
 }
 
-//auth()
+auth()
