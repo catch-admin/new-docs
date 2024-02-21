@@ -19,8 +19,10 @@
       </div>
     </div>
   </div>
+  <wechat />
 </template>
 <script setup>
+import wechat from './wechat.vue'
 /** 
 import confetti from 'canvas-confetti'
 
