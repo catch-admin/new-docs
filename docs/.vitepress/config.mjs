@@ -17,6 +17,7 @@ export default defineConfig({
   assetsDir: 'docs/assets',
   cleanUrls: true,
   head: [
+    ['link', { rel: 'icon', href: '/images/favicon.ico' }],
     ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ETX73YSQ1V' }],
     ['script', { async: '', src: '/docs/assets/star.js' }],
     [
@@ -55,7 +56,7 @@ export default defineConfig({
       },
       {
         text: '专业版文档',
-        link: 'https://catchadmin.com/pro/docs'
+        link: 'https://catchadmin.com/pro/docs/start/overview'
       },
       {
         text: '版本',
