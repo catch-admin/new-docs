@@ -63,7 +63,7 @@ app.directive('permission', (el, binding) => {
 
 ```html
 <template>
-  <el-button v-permission="user@user@store">创建权限</el-button>
+  <el-button v-action="user@user@store">创建权限</el-button>
 </template>
 ```
 
