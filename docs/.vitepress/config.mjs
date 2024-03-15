@@ -36,6 +36,11 @@ export default defineConfig({
         }
       }, 500);
       `
+    ],
+    [
+      'script',
+      {},
+      `window.$crisp=[];window.CRISP_WEBSITE_ID="3b932646-67e5-49a8-b7ee-6aa67f65879f";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`
     ]
   ],
   rewrites: {
