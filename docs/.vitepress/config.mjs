@@ -13,7 +13,7 @@ const apiPermission = `${api}/permission`
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'CatchAdmin 文档',
-  titleTemplate: 'CatchAdmin 后台管理系统框架 - 最新技术的 Laravel Admin Management System',
+  titleTemplate: 'CatchAdmin 文档 - CatchAdmin 后台管理系统框架 - 最新技术的 Laravel Admin Management System',
   description:
     'CatchAdmin 是一款基于 Laravel 和 Vue3 新的技术栈而成 Laravel Admin 管理后台系统框架。CatchAdmin 采用前后端分离策略，Laravel 框架仅仅作为 Api 输出。系统设计充分考虑了模块间的解耦，每个模块之间都有独立的控制器，路由，模型，数据表。在开发上尽可能将模块之间的影响降到最低，降低了开发上的难度，提高后期维护的效率。',
   assetsDir: 'docs/assets',
