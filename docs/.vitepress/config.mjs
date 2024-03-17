@@ -291,6 +291,6 @@ export default defineConfig({
     lastUpdated: {
       text: '最近更新'
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/catch-admin/new-docs' }]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/JaguarJack/catch-admin' }]
   }
 })
