@@ -55,7 +55,7 @@ npm install --global yarn
 yarn install
 ```
 
-:::info
+:::tip
 如果遇到网络问题，或者安装过慢的情况，需要加上前端镜像，使用这个命令即可 `yarn config set registry https://registry.npmmirror.com`
 :::
 
