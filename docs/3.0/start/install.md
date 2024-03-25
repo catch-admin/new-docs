@@ -55,6 +55,10 @@ npm install --global yarn
 yarn install
 ```
 
+:::info
+如果遇到网络问题，或者安装过慢的情况，需要加上前端镜像，使用这个命令即可 `yarn config set registry https://registry.npmmirror.com`
+:::
+
 这样就可以安装所有需要的依赖包了。依赖安装完成之后，还需要安装项目的基本信息，如下
 
 ```shell
