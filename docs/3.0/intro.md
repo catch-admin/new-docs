@@ -2,9 +2,20 @@
 
 `CatchAdmin`是一款基于[Laravel](https://laravel.com)和[Element Plus](https://element-plus.org)二次开发而成后台管理系统。`Laravel` 社区也有许多非常优秀的后台管理系统，例如 `Nova`, 官方出品，当然是收费的，免费的有基于 `Livewire` 的 `Filament`，还有不得不说的 `Laravel Admin`。`CatchAdmin` 还是采用传统的前后端分离策略，`Laravel` 框架仅仅作为 `Api` 输出。将管理系统模块之间的耦合降到了最低限度。每个模块之间都有独立的控制器，路由，模型，数据表。在开发上尽可能将模块之间的影响降到最低，降低了开发上的难度。基于 `CatchAdmin `可以开发 `CMS`，`CRM`，`OA` 等 等系统。也封装了很多实用的工具，提升开发体验。
 
-## 为什么是 Laravel
+## 其他新班儿
 
-`V2` 版本使用`Thinkphp`，但从其社区来看，从我个人角度来看开发组的心思已经不在维护框架上，因为据观察，每一次小版本发布都会引发一些小问题，虽然不大，但给人一种不够稳定的感觉，所以思索再三，使用 `Laravel`。`Laravel` 社区非常繁荣，他们每周都会发布新版本，以及围绕`Laravel`构建的生态也非常完善，有 `Horizon` 队列管理工具, `Telescope` 调试工具，`Octane`（基于 `Swoole` 和 `RoadRunner` 提高性能）等等一系列的工具，而且都是免费的。
+- [ThinkPHP8.0 版本](https://gitee.com/catchamin/catchadmin-tp)
+- [Webman 高性能版本](https://gitee.com/catchamin/catchadmin-webman)
+
+## 专业版
+
+[专业版本官方地址](https://gitee.com/link?target=https%3A%2F%2Flicense.catchadmin.com)
+
+首先感谢一直以来对 CatchAdmin 开源项目的支持和使用。作为一名开源工作者，我一直致力于开发出功能强大且易于使用的后台管理系统，以帮助您简化业务流程和提升工作效率。然而，由于某些原因，我不得不做出一些调整。为了能够继续开发和维护这个项目，我将推出一款付费的后台管理系统，以确保我能够持续为您提供高质量的服务和支持。
+
+专业版本不会在开源版本做一些破坏性变更，所以当您从开源版本切换到专业版本，不会有任何开发心智负担。但是使用专业版本会有新的组件来配合您的工作。
+
+我深信，付费后台管理系统将为您带来更多的价值和便利，帮助您提升工作效率
 
 ## 功能
 
