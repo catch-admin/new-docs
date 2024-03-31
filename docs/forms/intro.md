@@ -25,11 +25,11 @@
 
 ### 基础组件
 
-- [Input 组件](./basic/input.md)
+- [Text 组件](./basic/text.md)
 - [Number 组件](./basic/number.md)
 - [Email 组件](./basic/email.md)
 - [Password 组件](./basic/password.md)
-- [Date 组件](./basic/data.md)
+- [Date 组件](./basic/date.md)
 - [Select 组件](./basic/select.md)
 - [Boolean 组件](./basic/boolean.md)
 - [Radio 组件](./basic/radio.md)
