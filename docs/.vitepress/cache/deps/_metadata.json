@@ -1,40 +1,31 @@
 {
-  "hash": "cadad8ca",
-  "configHash": "612689ed",
-  "lockfileHash": "ab8be425",
-  "browserHash": "2bb610b9",
+  "hash": "6f991a06",
+  "configHash": "87e11bbd",
+  "lockfileHash": "fdb23f05",
+  "browserHash": "4295ffc6",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "0d933bc3",
+      "fileHash": "0a8bbb7c",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
-      "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
+      "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "1047f218",
+      "fileHash": "15f8087a",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "e36cb73e",
+      "fileHash": "f2534ade",
       "needsInterop": false
-    },
-    "sweetalert2": {
-      "src": "../../../../node_modules/sweetalert2/dist/sweetalert2.all.js",
-      "file": "sweetalert2.js",
-      "fileHash": "e4eba66b",
-      "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-3YS4HNIT": {
-      "file": "chunk-3YS4HNIT.js"
-    },
-    "chunk-Y2F7D3TJ": {
-      "file": "chunk-Y2F7D3TJ.js"
+    "chunk-CKQ4TNQ3": {
+      "file": "chunk-CKQ4TNQ3.js"
     }
   }
 }

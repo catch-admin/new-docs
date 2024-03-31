@@ -7,6 +7,7 @@ const version3server = `${version3root}/server`
 const version3start = `${version3root}/start`
 const version3front = `${version3root}/front`
 const api = `${root}/api`
+const forms = `${root}/forms`
 const apiUser = `${api}/user`
 const apiPermission = `${api}/permission`
 
@@ -47,6 +48,7 @@ export default defineConfig({
   ],
   rewrites: {
     'api/(.*)': 'docs/api/(.*)',
+    'forms/(.*)': 'docs/forms/(.*)',
     '2.0/(.*)': 'docs/(.*)',
     '2.0/catchadmin/(.*)': 'docs/catchadmin/(.*)',
     '3.0/(.*)': 'docs/3.0/(.*)',
@@ -66,6 +68,10 @@ export default defineConfig({
         link: 'https://catchadmin.com/pro/docs/start/overview'
       },
       {
+        text: '动态表单',
+        link: '/docs/forms/intro'
+      },
+      {
         text: '版本',
         items: [
           { text: '2.6', link: `${root}/intro` },
@@ -76,6 +82,52 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/docs/forms/': {
+        items: [
+          { text: '介绍', link: `${forms}/intro.md` },
+          { text: '使用', link: `${forms}/develop.md` },
+          {
+            text: 'Layout组件',
+            collapsed: true,
+            items: [
+              {
+                text: 'Grid 组件',
+                link: `${forms}/layout/grid`
+              },
+              {
+                text: 'Collapse 组件',
+                link: `${forms}/layout/collapse`
+              },
+              {
+                text: 'Card 组件',
+                link: `${forms}/layout/card`
+              },
+              {
+                text: 'Inline 组件',
+                link: `${forms}/layout/inline`
+              }
+            ]
+          },
+          {
+            text: '基础组件',
+            collapsed: true,
+            items: [
+              {
+                text: '输入框'
+              }
+            ]
+          },
+          {
+            text: '辅助组件',
+            collapsed: true,
+            items: [
+              {
+                text: '输入框'
+              }
+            ]
+          }
+        ]
+      },
       '/docs/api/': {
         items: [
           { text: '介绍', link: `${api}/intro.md` },
