@@ -87,6 +87,7 @@ export default defineConfig({
           { text: '组件介绍', link: `${forms}/intro.md` },
           { text: '基类组件', link: `${forms}/component.md` },
           { text: '快速使用', link: `${forms}/develop.md` },
+          { text: '表单规则', link: `${forms}/rules.md` },
           {
             text: 'Layout组件',
             collapsed: true,

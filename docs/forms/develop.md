@@ -65,7 +65,7 @@ class RoleForm
 显示效果如下
 ![分栏布局](/docs/assets/images/gird.jpg)
 
-## 条件
+## 表单条件
 
 有时候表单元素之间需要一些状态条件联动，举个简单的示例，还是以上面的示例为例
 
@@ -91,3 +91,39 @@ class RoleForm
 ```
 
 ![条件演示](/docs/assets/images/condition.gif)
+
+## 表单验证
+
+表单组件内部内置了很多可用规则，下面演示个只允许字母的规则。
+
+```php
+class RoleForm
+{
+    public function render()
+    {
+       $form = new Form();
+
+        return $form->make(new Roles(), function (Form $form) {
+            $form->grid(function (Grid $grid) {
+                $grid->grid(function (Grid $grid) {
+                    $grid->text('role_name', '角色名称')->required();
+                    $grid->text('identify', '角色显示名称')->required()
+                        // 只允许字母
+                        ->rules('alpha');
+                });
+
+                $grid->grid(function (Grid $grid) {
+                    $grid->text('description', '角色描述')->required();
+                });
+            }, 2);
+        })->labelWidth(120);
+
+    }
+}
+```
+
+![条件演示](/docs/assets/images/rule.gif)
+
+### 可用规则
+
+[可用规则，请查看可用规则验证列表](./rules.md)

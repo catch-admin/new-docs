@@ -70,7 +70,7 @@ class Son extends Component
 - `rules(array $rules)` 验证规则
 - `class(string $class) `tailwindcss class 样式
 - `style(string $style)` style 行内样式
-- `prop(设置组件的 props)`
+- `prop($key, $value)` 设置组件的 props
 - `when($condition, \Closure $callback)` when 条件
 - `props(array $props)` 添加 props
 - `help(string $help)` 提示
