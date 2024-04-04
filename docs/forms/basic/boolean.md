@@ -1,6 +1,6 @@
 # Boolean
 
-该组件实际就是 `Switch` 组件
+该组件实际就是 [`Switch` 组件](https://element-plus.org/zh-CN/component/switch.html)
 
 ## 默认
 
@@ -38,4 +38,4 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(120);
 ```
 
-![switch组件添加默认值](/docs/assets/images/switch1.jpg)
+![switch组件添加默认值](/docs/assets/images/switch2.jpg)
