@@ -33,7 +33,6 @@
 - [Select 组件](./basic/select.md)
 - [Boolean 组件](./basic/boolean.md)
 - [Radio 组件](./basic/radio.md)
-- [Status 组件](./basic/status.md)
 - [TextArea 组件](./basic/textarea.md)
 - [Slider 组件](./basic/slider.md)
 - [Rate 组件](./basic/rate.md)

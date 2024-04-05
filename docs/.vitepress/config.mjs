@@ -63,12 +63,12 @@ export default defineConfig({
         text: '接口文档',
         link: '/docs/api/intro'
       },
-      {
+      /**{
         text: '专业版文档',
         link: 'https://catchadmin.com/pro/docs/start/overview'
-      },
+      },*/
       {
-        text: '动态表单',
+        text: '动态表单✨',
         link: '/docs/forms/intro'
       },
       {
@@ -165,10 +165,6 @@ export default defineConfig({
               {
                 text: 'Slider组件',
                 link: `${forms}/basic/slider`
-              },
-              {
-                text: '状态组件',
-                link: `${forms}/basic/status`
               },
               {
                 text: '文本组件',

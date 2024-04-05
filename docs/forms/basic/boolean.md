@@ -1,4 +1,4 @@
-# Boolean
+# Boolean 组件
 
 该组件实际就是 [`Switch` 组件](https://element-plus.org/zh-CN/component/switch.html)
 
@@ -13,7 +13,7 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(120);
 ```
 
-![switch组件默认](/docs/assets/images/switch.png)
+![switch组件默认-catchadmin 动态表单](/docs/assets/images/switch.png)
 
 ## 添加文字提示
 
@@ -26,7 +26,7 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(120);
 ```
 
-![switch组件添加文字提示](/docs/assets/images/switch1.jpg)
+![switch组件添加文字提示-catchadmin 动态表单](/docs/assets/images/switch1.jpg)
 
 ## 添加默认值
 
@@ -38,4 +38,4 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(120);
 ```
 
-![switch组件添加默认值](/docs/assets/images/switch2.jpg)
+![switch组件添加默认值-catchadmin 动态表单](/docs/assets/images/switch2.jpg)

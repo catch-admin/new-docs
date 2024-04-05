@@ -19,7 +19,7 @@ return $form->make(new Roles(), function (Form $form) {
 ```
 
 通过 `options` 方法设置数据源, 然后根据实际业务设置 `value` 和 `label` 值, 如下所示效果
-![image](/docs/assets/images/cascader.jpg)
+![Cascader-catchadmin 动态表单](/docs/assets/images/cascader.jpg)
 
 ## 只显示一级
 
@@ -73,7 +73,7 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(120);
 ```
 
-![image](/docs/assets/images/cascader1.jpg)
+![Cascader-catchadmin 动态表单](/docs/assets/images/cascader1.jpg)
 
 ## 赋值
 
