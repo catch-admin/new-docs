@@ -1,5 +1,9 @@
 # Textarea
 
+`Textarea` 使用 `text 组件` 包装
+
+## 基础使用
+
 ```php
  $form = new Form();
 
