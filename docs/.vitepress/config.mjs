@@ -185,6 +185,10 @@ export default defineConfig({
               {
                 text: '链接组件',
                 link: `${forms}/basic/url`
+              },
+              {
+                text: '自增组件',
+                link: `${forms}/basic/dymaic`
               }
             ]
           },
