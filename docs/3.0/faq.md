@@ -67,3 +67,19 @@ Route::prefix('shop')->group(function () {
     Route::apiResource('category', CategoryController::class)->names('shop_category')
 });
 ```
+
+## 打包出现报错
+
+如果打包出现 ts 过多的类型错误，而你对类型又不太敏感的话，对应用没有影响。
+一个快速的解决办法就是修改 `package.json 文件` build 命令
+
+```json
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build", // [!code --]
+    "build": "vite build", // [!code ++]
+    "preview": "vite preview"
+  }
+}
+```
