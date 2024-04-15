@@ -11,7 +11,7 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(70);
 ```
 
-![button组件-catchadmin 动态表单](/docs/assets/images/button.jpg)
+![button组件-catchadmin 动态表单](/docs/assets/images/button.png)
 
 ## 添加事件
 
