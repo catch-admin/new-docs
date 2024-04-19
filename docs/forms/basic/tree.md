@@ -45,3 +45,19 @@ return $form->make(new Roles(), function (Form $form) {
                ->showCheckbox();
 })->labelWidth(120);
 ```
+
+## 异步加载
+
+```php
+$form = new Form();
+
+return $form->make(new Roles(), function (Form $form) {
+     $form->tree('permissions', '树形结构')
+                ->required()
+                ->isExpanded()
+                ->label('permission_name')
+               ->showCheckbox()
+               // api 接口
+               ->api('permissions/permissions?from=role');
+})->labelWidth(120);
+```
