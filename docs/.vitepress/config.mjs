@@ -384,6 +384,7 @@ export default defineConfig({
       next: '下一页'
     },
     outline: {
+      level: 'deep',
       label: '页面导航'
     },
     lastUpdated: {
