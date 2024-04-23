@@ -350,7 +350,9 @@ export default defineConfig({
               { text: '侧边栏&路由', link: `${version3front}/side-menu.md` },
               { text: '权限认证', link: `${version3front}/permissions.md` },
               { text: '样式', link: `${version3front}/style.md` },
-              { text: '请求', link: `${version3front}/request.md` }
+              { text: '请求', link: `${version3front}/request.md` },
+              { text: '动态表格', link: `${version3front}/catch-table.md` },
+              { text: '动态表单', link: `${version3front}/catch-form.md` }
             ]
           },
           {
