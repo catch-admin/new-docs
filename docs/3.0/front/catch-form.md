@@ -269,6 +269,21 @@ Grid 两栏
 }
 ```
 
+#### Password 组件
+
+[Input 组件 props](https://element-plus.org/zh-CN/component/input.html#api)
+
+```js
+{
+    label: '密码',
+    component: 'password',
+    props: {
+        placeholder: '请输入密码'
+    },
+    name: 'password'
+}
+```
+
 #### Select 组件
 
 [Select 组件 props](https://element-plus.org/zh-CN/component/select.html#select-api)
@@ -522,6 +537,171 @@ Grid 两栏
 
 #### 上传组件
 
+##### 单图上传
+
+```js
+import { getAuthToken, env } from '/admin/support/helper'
+const form = {
+  items: [
+    {
+      label: '单图上传',
+      props: {
+        action: env('VITE_BASE_URL') + 'upload/image',
+        name: 'image',
+        token: 'Bearer ' + getAuthToken()
+      },
+      component: 'upload_image',
+      name: 'image'
+    }
+  ]
+}
+```
+
+##### 多图上传
+
+```js
+import { getAuthToken, env } from '/admin/support/helper'
+const form = {
+  items: [
+    {
+      label: '多图上传',
+      props: {
+        action: env('VITE_BASE_URL') + 'upload/image',
+        name: 'image',
+        token: 'Bearer ' + getAuthToken()
+      },
+      component: 'upload_images',
+      name: 'image'
+    }
+  ]
+}
+```
+
+##### 单文件上传
+
+```js
+import { getAuthToken, env } from '/admin/support/helper'
+const form = {
+  items: [
+    {
+      label: '单文件上传',
+      props: {
+        action: env('VITE_BASE_URL') + 'upload/file',
+        name: 'image',
+        token: 'Bearer ' + getAuthToken()
+      },
+      component: 'upload_file',
+      name: 'file'
+    }
+  ]
+}
+```
+
+##### 多文件上传
+
+```js
+import { getAuthToken, env } from '/admin/support/helper'
+const form = {
+  items: [
+    {
+      label: '多文件上传',
+      props: {
+        action: env('VITE_BASE_URL') + 'upload/file',
+        name: 'image',
+        token: 'Bearer ' + getAuthToken()
+      },
+      component: 'upload_files',
+      name: 'file'
+    }
+  ]
+}
+```
+
 #### Tree 组件
 
+[Tree 组件 props](https://element-plus.org/zh-CN/component/tree.html#%E5%B1%9E%E6%80%A7)
+
+```js
+{
+    label: '树形结构',
+    props: {
+        'show-checkbox': true,
+        options: [
+            {
+                label: '选项1',
+                value: 'value1',
+                children: [
+                    {
+                        label: '选项1-1',
+                        value: 'value1-1'
+                    },
+                    {
+                        label: '选项1-2',
+                        value: 'value1-2'
+                    },
+                    {
+                        label: '选项1-3',
+                        value: 'value1-2'
+                    }
+                ]
+            },
+            {
+                label: '选项2',
+                value: 'value2',
+                children: [
+                    {
+                        label: '选项2-1',
+                        value: 'value2-1'
+                    },
+                    {
+                        label: '选项2-2',
+                        value: 'value2-2'
+                    },
+                    {
+                        label: '选项2-3',
+                        value: 'value2-2'
+                    }
+                ]
+            },
+            {
+                label: '选项3',
+                value: 'value3'
+            }
+        ],
+    },
+    component: 'tree',
+    name: 'tree'
+}
+```
+
 #### 自增表单
+
+```js
+{
+    label: '动态配置',
+    props: {
+        children: [
+            {
+                name: 'name',
+                label: '名称',
+                component: 'input',
+                props: {
+                    clearable: true,
+                    placeholder: '请输入名称'
+                }
+            },
+            {
+                name: 'name1',
+                label: '名称1',
+                component: 'input',
+                props: {
+                    clearable: true,
+                    placeholder: '请输入名称1'
+                }
+            }
+        ]
+    },
+    component: 'form_list',
+    name: 'hello'
+}
+```

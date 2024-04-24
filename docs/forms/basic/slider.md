@@ -37,4 +37,4 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(120);
 ```
 
-![slider组件-catchadmin动态表单](/docs/assets/images/slider.png)
+![laravel admin catchadmin 动态表单 slider组件](/docs/assets/images/slider.png)

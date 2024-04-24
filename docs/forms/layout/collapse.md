@@ -26,4 +26,4 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(70);
 ```
 
-![collapse组件-catchadmin 动态表单](/docs/assets/images/collapse.jpg)
+![laravel admin catchadmin 动态表单 collapse组件](/docs/assets/images/collapse.jpg)

@@ -19,4 +19,4 @@ return $form->make(new Roles(), function (Form $form) {
 
 ```
 
-![inline组件-catchadmin 动态表单](/docs/assets/images/inline.jpg)
+![laravel admin catchadmin 动态表单 inline组件](/docs/assets/images/inline.jpg)

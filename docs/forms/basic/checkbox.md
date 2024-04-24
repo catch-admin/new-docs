@@ -26,7 +26,7 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(120);
 ```
 
-![image](/docs/assets/images/checkbox.jpg)
+![laravel admin catchadmin 动态表单 checkbox组件](/docs/assets/images/checkbox.jpg)
 
 ## 默认值/赋值
 
@@ -52,7 +52,7 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(120);
 ```
 
-![checkbox组件-catchadmin 动态表单](/docs/assets/images/checkbox1.jpg)
+![laravel admin catchadmin 动态表单 checkbox组件](/docs/assets/images/checkbox1.jpg)
 
 ## 禁用某个选项
 

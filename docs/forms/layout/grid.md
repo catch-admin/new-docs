@@ -23,7 +23,7 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(120);
 ```
 
-![grid组件-catchadmin 动态表单](/docs/assets/images/grid2.jpg)
+![laravel admin catchadmin 动态表单 grid组件](/docs/assets/images/grid2.jpg)
 
 ## 三栏布局
 
@@ -50,7 +50,7 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(70);
 ```
 
-![grid组件-catchadmin 动态表单](/docs/assets/images/grid3.jpg)
+![laravel admin catchadmin 动态表单 grid组件](/docs/assets/images/grid3.jpg)
 
 :::tip
 Grid 布局栏目过多注意使用 labelWidth 的宽度

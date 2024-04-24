@@ -19,7 +19,7 @@ return $form->make(new Roles(), function (Form $form) {
 默认使用 table 模式
 :::
 
-![dymaic-catchadmin 动态表单](/docs/assets/images/dymaic.png)
+![laravel admin catchadmin 动态表单 dymaic组件](/docs/assets/images/dymaic.png)
 
 ## 卡片模式
 
@@ -36,7 +36,7 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(70);
 ```
 
-![dymaic-catchadmin 动态表单](/docs/assets/images/dymaic1.png)
+![laravel admin catchadmin 动态表单 dymaic组件](/docs/assets/images/dymaic1.png)
 
 ## 默认值
 
@@ -62,4 +62,4 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(70);
 ```
 
-![dymaic-catchadmin 动态表单](/docs/assets/images/dymaic2.png)
+![laravel admin catchadmin 动态表单 dymaic组件](/docs/assets/images/dymaic2.png)

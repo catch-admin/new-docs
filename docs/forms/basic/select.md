@@ -138,4 +138,4 @@ return $form->make(new Roles(), function (Form $form) {
 })->labelWidth(120);
 ```
 
-![select组件-catchadmin 动态表单](/docs/assets/images/selectgroup.jpg)
+![laravel admin catchadmin 动态表单 select组件](/docs/assets/images/selectgroup.jpg)
