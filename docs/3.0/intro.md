@@ -41,10 +41,10 @@
 
 ## 预览
 
-![zRrjNd.png](https://i.imgtg.com/2023/02/16/dASpg.png)
-![zRsAEQ.png](https://i.imgtg.com/2023/02/16/dAsKK.png)
-![zRsUv6.png](https://i.imgtg.com/2023/02/16/dA0fB.png)
-![zRsV4s.png](https://i.imgtg.com/2023/02/16/dAd5s.png)
+![laravel admin catchadmin 介绍](/docs/assets/intro/catchadmin-intro.png)
+![laravel admin catchadmin 介绍](/docs/assets/intro/catchadmin-intro1.png)
+![laravel admin catchadmin 介绍](/docs/assets/intro/catchadmin-intro2.png)
+![laravel admin catchadmin 介绍](/docs/assets/intro/catchadmin-intro3.png)
 
 ## 体验地址
 
