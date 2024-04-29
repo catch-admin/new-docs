@@ -56,6 +56,10 @@ npm install --global yarn
 
 ### 命令安装
 
+:::tip
+安装的时候输入
+:::
+
 ```shell
 // 安装后台, 按照提示输入对应信息即可
 php think catch:install

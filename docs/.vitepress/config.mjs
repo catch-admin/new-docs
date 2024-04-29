@@ -323,7 +323,7 @@ export default defineConfig({
           {
             text: '项目文档',
             items: [
-              { text: 'Laravel 版本安装', link: `${version3start}/install.md` },
+              { text: '项目安装', link: `${version3start}/install.md` },
               { text: '项目介绍', link: `${version3start}/project_intro.md` }
             ]
           },
