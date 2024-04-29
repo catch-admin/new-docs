@@ -14,7 +14,7 @@
 
 - [git 代码管理](https://git-scm.com/downloads)
 - [composer PHP 包管理器](https://getcomposer.org/download/)
-- [nodejs](https://nodejs.org/zh-cn/)
+- [nodejs >= 18.8.0](https://nodejs.org/zh-cn/)
 - [yarn 前端包管理器](https://yarn.bootcss.com/)
 - [vite](https://cn.vitejs.dev/)
 
