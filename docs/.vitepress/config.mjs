@@ -323,8 +323,15 @@ export default defineConfig({
           {
             text: '项目文档',
             items: [
-              { text: '项目安装', link: `${version3start}/install.md` },
+              { text: 'Laravel 版本安装', link: `${version3start}/install.md` },
               { text: '项目介绍', link: `${version3start}/project_intro.md` }
+            ]
+          },
+          {
+            text: '其他版本',
+            items: [
+              { text: 'ThinkPHP 版本安装', link: `${version3start}/thinkphp.md` },
+              { text: 'Webman 版本安装', link: `${version3start}/webman.md` }
             ]
           },
           {
