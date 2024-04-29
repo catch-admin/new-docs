@@ -82,144 +82,6 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/docs/forms/': {
-        items: [
-          { text: '组件介绍', link: `${forms}/intro.md` },
-          { text: '基类组件', link: `${forms}/component.md` },
-          { text: '快速使用', link: `${forms}/develop.md` },
-          { text: '表单规则', link: `${forms}/rules.md` },
-          {
-            text: 'Layout组件',
-            collapsed: true,
-            items: [
-              {
-                text: 'Grid 组件',
-                link: `${forms}/layout/grid`
-              },
-              {
-                text: 'Collapse 组件',
-                link: `${forms}/layout/collapse`
-              },
-              {
-                text: 'Card 组件',
-                link: `${forms}/layout/card`
-              },
-              {
-                text: 'Inline 组件',
-                link: `${forms}/layout/inline`
-              }
-            ]
-          },
-          {
-            text: '基础组件',
-            collapsed: true,
-            items: [
-              {
-                text: 'Boolean 组件',
-                link: `${forms}/basic/boolean`
-              },
-              {
-                text: 'Cascader 组件',
-                link: `${forms}/basic/cascader`
-              },
-              {
-                text: 'Checkbox 组件',
-                link: `${forms}/basic/checkbox`
-              },
-              {
-                text: '颜色选择组件',
-                link: `${forms}/basic/colorPicker`
-              },
-              {
-                text: '日期组件',
-                link: `${forms}/basic/date`
-              },
-              {
-                text: '邮箱组件',
-                link: `${forms}/basic/email`
-              },
-              {
-                text: 'Icon选择组件',
-                link: `${forms}/basic/iconSelect`
-              },
-              {
-                text: '数字组件',
-                link: `${forms}/basic/number`
-              },
-              {
-                text: '密码组件',
-                link: `${forms}/basic/password`
-              },
-              {
-                text: 'Radio 组件',
-                link: `${forms}/basic/radio`
-              },
-              {
-                text: '评分(rate)组件',
-                link: `${forms}/basic/rate`
-              },
-              {
-                text: 'Select组件',
-                link: `${forms}/basic/select`
-              },
-              {
-                text: 'Slider组件',
-                link: `${forms}/basic/slider`
-              },
-              {
-                text: '文本组件',
-                link: `${forms}/basic/text`
-              },
-              {
-                text: '文本域组件',
-                link: `${forms}/basic/textarea`
-              },
-              {
-                text: 'Transfer 组件',
-                link: `${forms}/basic/transfer`
-              },
-              {
-                text: '上传组件',
-                link: `${forms}/basic/upload`
-              },
-              {
-                text: 'Tree 组件',
-                link: `${forms}/basic/tree`
-              },
-              {
-                text: '链接组件',
-                link: `${forms}/basic/url`
-              },
-              {
-                text: '自增组件',
-                link: `${forms}/basic/dymaic`
-              }
-            ]
-          },
-          {
-            text: '辅助组件',
-            collapsed: true,
-            items: [
-              {
-                text: 'Alert',
-                linke: `${forms}/assist/alert`
-              },
-              {
-                text: '按钮组件',
-                linke: `${forms}/assist/button`
-              },
-              {
-                text: '分割线组件',
-                linke: `${forms}/assist/divider`
-              },
-              {
-                text: '标题组件',
-                linke: `${forms}/assist/title`
-              }
-            ]
-          }
-        ]
-      },
       '/docs/api/': {
         items: [
           { text: '介绍', link: `${api}/intro.md` },
@@ -367,6 +229,137 @@ export default defineConfig({
             items: [
               { text: '视频教程', link: `${version3root}/video.md` },
               { text: '常见问题', link: `${version3root}/faq.md` }
+            ]
+          }
+        ]
+      },
+      '/docs/forms/': {
+        items: [
+          { text: '组件介绍', link: `${forms}/intro.md` },
+          { text: '基类组件', link: `${forms}/component.md` },
+          { text: '快速使用', link: `${forms}/develop.md` },
+          { text: '表单规则', link: `${forms}/rules.md` },
+          {
+            text: 'Layout组件',
+            items: [
+              {
+                text: 'Grid 组件',
+                link: `${forms}/layout/grid`
+              },
+              {
+                text: 'Collapse 组件',
+                link: `${forms}/layout/collapse`
+              },
+              {
+                text: 'Card 组件',
+                link: `${forms}/layout/card`
+              },
+              {
+                text: 'Inline 组件',
+                link: `${forms}/layout/inline`
+              }
+            ]
+          },
+          {
+            text: '基础组件',
+            items: [
+              {
+                text: 'Boolean 组件',
+                link: `${forms}/basic/boolean`
+              },
+              {
+                text: 'Cascader 组件',
+                link: `${forms}/basic/cascader`
+              },
+              {
+                text: 'Checkbox 组件',
+                link: `${forms}/basic/checkbox`
+              },
+              {
+                text: '颜色选择组件',
+                link: `${forms}/basic/colorPicker`
+              },
+              {
+                text: '日期组件',
+                link: `${forms}/basic/date`
+              },
+              {
+                text: '邮箱组件',
+                link: `${forms}/basic/email`
+              },
+              {
+                text: 'Icon选择组件',
+                link: `${forms}/basic/iconSelect`
+              },
+              {
+                text: '数字组件',
+                link: `${forms}/basic/number`
+              },
+              {
+                text: '密码组件',
+                link: `${forms}/basic/password`
+              },
+              {
+                text: 'Radio 组件',
+                link: `${forms}/basic/radio`
+              },
+              {
+                text: '评分(rate)组件',
+                link: `${forms}/basic/rate`
+              },
+              {
+                text: 'Select组件',
+                link: `${forms}/basic/select`
+              },
+              {
+                text: 'Slider组件',
+                link: `${forms}/basic/slider`
+              },
+              {
+                text: '文本组件',
+                link: `${forms}/basic/text`
+              },
+              {
+                text: '文本域组件',
+                link: `${forms}/basic/textarea`
+              },
+              {
+                text: 'Transfer 组件',
+                link: `${forms}/basic/transfer`
+              },
+              {
+                text: '上传组件',
+                link: `${forms}/basic/upload`
+              },
+              {
+                text: 'Tree 组件',
+                link: `${forms}/basic/tree`
+              },
+              {
+                text: '链接组件',
+                link: `${forms}/basic/url`
+              },
+              {
+                text: '自增组件',
+                link: `${forms}/basic/dymaic`
+              }
+            ]
+          },
+          {
+            text: '辅助组件',
+            items: [
+              {
+                text: 'Alert',
+                link: `${forms}/assist/alert`
+              },
+              {
+                text: '按钮组件',
+                link: `${forms}/assist/button`
+              },
+              {
+                text: '标题组件',
+                link: `${forms}/assist/title`
+              }
             ]
           }
         ]
