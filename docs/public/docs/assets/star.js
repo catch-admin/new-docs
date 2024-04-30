@@ -180,7 +180,7 @@ const code = hasCode()
 if (path.includes('docs/3.0/intro') && code) {
   getAccessToken(code)
   setTimeout(() => {
-    const url = 'https://gitee.com/api/v5/user/starred/JaguarJack/catchadmin?access_token=' + getAccessTokenFor()
+    const url = 'https://gitee.com/api/v5/user/starred/catchadmin/catchAdmin?access_token=' + getAccessTokenFor()
     fetch(url, { method: 'PUT' })
       .then((r) => {
         //
