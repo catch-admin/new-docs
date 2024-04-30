@@ -24,7 +24,6 @@
 
 - [Alert 组件](./assist/alert.md)
 - [Button 组件](./assist/button.md)
-- [Divider 组件](./assist/divider.md)
 - [Title 组件](./assist/title.md)
 
 ### 基础组件
@@ -50,6 +49,6 @@
 
 ## 安装
 
-```she
+```shell
 composer require catchadmin/form
 ```
