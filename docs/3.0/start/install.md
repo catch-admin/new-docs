@@ -44,6 +44,12 @@ sudo apt-get install composer
 composer install
 ```
 
+:::info
+如果安装失败，可能是 composer 源的问题，可以使用下面的命令切换到腾讯源
+
+composer config -g repos.packagist composer https://mirrors.tencent.com/composer/
+:::
+
 这个命令会自动下载并安装`CatchAdmin`项目所需要的 PHP 包。
 除了 PHP 包之外，该项目还需要一些前端包。您可以使用以下命令安装这些包：
 
