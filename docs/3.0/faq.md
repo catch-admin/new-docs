@@ -4,6 +4,14 @@
 
 由于 `Laravel10` 刚发布，无法安装。可能是由于镜像更新慢导致的，所以建议取消使用镜像。使用'魔法'(懂得吧)去下载
 
+### 使用腾讯云镜像
+
+使用下面的命令即可
+
+```shell
+composer config -g repos.packagist composer https://mirrors.tencent.com/composer/
+```
+
 ## 设置了菜单，却只显示子级?
 
 目前菜单设置上，如果是二级菜单，并且只有`一个`二级菜单的情况下，那么只会显示二级菜单。
