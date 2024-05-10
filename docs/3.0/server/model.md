@@ -91,6 +91,26 @@ class SoftDelete extends SoftDeletingScope
 }
 ```
 
+## 取消软删
+
+某些情况下，可能不需要软删除的需求，例如一些 log 记录。但是还是想使用 admin 自带的一些模型操作方法，那么可以这么使用。你可以继承 Laravel 自带的 `EloquentModel`, 但是需要使用三个 trait 来满足基本操作功能，下面的例子来自项目中的操作日志
+
+```php
+namespace Modules\User\Models;
+
+use Catch\CatchAdmin;
+// 添加以下三个 trait 操作
+use Catch\Traits\DB\BaseOperate; // 基本操作
+use Catch\Traits\DB\ScopeTrait; // scope trait
+use Catch\Traits\DB\Trans; // 事务操作
+use Illuminate\Database\Eloquent\Model;
+
+class LogOperate extends Model
+{
+    use BaseOperate, Trans, ScopeTrait;
+}
+```
+
 ## 属性
 
 除了上面的改变，`CatchAdmin` 还新增了若干属性，以增强项目的粘合性。

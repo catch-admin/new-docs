@@ -95,3 +95,23 @@ yarn run build
 :::tip
 前端项目配置最好开启 `Gzip`,可以加速前端项目访问速度。
 :::
+
+## 代码生成
+
+因为是前后端分离，所以整个项目是分为两个项目存在的。
+框架默认将前端项目安装在根目录的 `web` 目录，如果你要移动前端目录到其他目录，注意一定要设置下面的配置
+
+- web_path 前端项目录
+- views_path 前端项目 views 目录
+
+找到 `config/catch.php` 配置文件，切换成实际的前端项目目录即可
+
+```php
+return [
+    // 前端项目目录
+    'web_path' => root_path('web'),
+
+    // 前端视图目录
+    'views_path' => root_path('web').DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR,
+];
+```
