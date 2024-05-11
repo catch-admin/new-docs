@@ -186,7 +186,8 @@ export default defineConfig({
             text: '项目文档',
             items: [
               { text: '项目安装', link: `${version3start}/install.md` },
-              { text: '项目介绍', link: `${version3start}/project_intro.md` }
+              { text: '项目介绍', link: `${version3start}/project_intro.md` },
+              { text: '项目部署', link: `${version3root}/deploy.md` }
             ]
           },
           {
@@ -227,7 +228,6 @@ export default defineConfig({
           {
             text: '综合',
             items: [
-              { text: '项目部署', link: `${version3root}/deploy.md` },
               { text: '视频教程', link: `${version3root}/video.md` },
               { text: '常见问题', link: `${version3root}/faq.md` }
             ]
