@@ -21,16 +21,12 @@ export default defineConfig({
   cleanUrls: true,
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ETX73YSQ1V' }],
+    // ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ETX73YSQ1V' }],
     ['script', { async: '', src: '/docs/assets/star.js' }],
     [
       'script',
       {},
-      `window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-ETX73YSQ1V');
-      setTimeout(() => {
+      `setTimeout(() => {
         const title = document.querySelector('.VPNavBarTitle .title')
       
         title.href = 'javascript:void(0)'
@@ -39,6 +35,18 @@ export default defineConfig({
         }
       }, 500);
       `
+    ],
+    // 百度统计
+    [
+      'script',
+      {},
+      `var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?5fcb7ae92be895d2e1e9d4136e2ed21b";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();`
     ],
     [
       'script',
