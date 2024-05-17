@@ -18,6 +18,11 @@
 - [yarn 前端包管理器](https://yarn.bootcss.com/)
 - [vite](https://cn.vitejs.dev/)
 
+:::tip
+如果你是第一次使用或者需要一个完整的集成环境，CatchAdmin 官方也提供了一个 Laravel 入门教程，目前正在完善中。
+可以尝试使用该文档 [Laragon 集成环境安装](https://laravel-study.catchadmin.com/hello-laravel.html#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87)
+:::
+
 ### 下载项目
 
 接下来，您需要下载 CatchAdmin 项目。您可以前往该项目在 [CatchAdmin](https://github.com/JaguarJack/catch-admin) 上的页面进行下载，也可以使用 `git` clone 命令将代码克隆到本地，这样就能及时获取代码更新。
