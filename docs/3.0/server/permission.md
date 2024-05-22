@@ -72,14 +72,18 @@ class PermissionGate
 `catchadmin` 使用模块化，所以权限标识的格式是这样的
 
 ```
-module@controller@action
+module@controller@action // 模块名称@控制器名称@控制器方法名称
 ```
 
-例如权限模块的角色列表，最后进行权限判断的格式就是这样的
+例如权限模块的角色列表，它是放在权限模块(Permissions)角色控制器(RolesController)的`index`方法。那么进行权限判断的格式就是这样的
 
 ```php
-Modules\permissions\Http\Controller\RolesController@index
+Modules\Permissions\Http\Controller\RolesController@index
 ```
+
+如果出现权限认证失败，那么极大可能是你在后台权限菜单设置的问题，你需要去数据库确认下
+![catchadmin 权限-laravel admin](https://image.catchadmin.com/202405220926755.png)
+对应的 `moudle` 和 `permission_mark` 字段，确认是否符合上面的规则
 
 #### 当前用户是否有权限
 
