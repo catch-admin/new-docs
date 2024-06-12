@@ -22,7 +22,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     // ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ETX73YSQ1V' }],
-    ['script', { async: '', src: '/docs/assets/star.js' }],
+    // ['script', { async: '', src: '/docs/assets/star.js' }],
     [
       'script',
       {},
