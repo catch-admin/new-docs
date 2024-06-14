@@ -81,26 +81,13 @@ cd web && yarn dev
 vue 后台使用了是 `element Plus` [文档地址](https://element-plus.org)
 :::
 
-### 打包前端项目
-
-打包前请先配置正是环境 API 地址。在项目的根目录下的`.env.production`文件配置
-
-```
-# base api
-VITE_BASE_URL = '正式环境的 API 地址'
-```
-
-然后进行打包
-
-```
-yarn run build
-```
-
-:::tip
-前端项目配置最好开启 `Gzip`,可以加速前端项目访问速度。
-:::
-
 ## 代码生成
+
+Laravel 和 tp 的代码生成功能是不一样的，默认项目使用 Laravel 的，如果需要开启 tp 的，则需要在前端项目的 `.env` 配置文件加上下面的配置
+
+```javascript
+VITE_GENERATE = true
+```
 
 因为是前后端分离，所以整个项目是分为两个项目存在的。
 框架默认将前端项目安装在根目录的 `web` 目录，如果你要移动前端目录到其他目录，注意一定要设置下面的配置
@@ -119,3 +106,22 @@ return [
     'views_path' => root_path('web').DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR,
 ];
 ```
+
+### 打包前端项目
+
+打包前请先配置正是环境 API 地址。在项目的根目录下的`.env.production`文件配置
+
+```
+# base api
+VITE_BASE_URL = '正式环境的 API 地址'
+```
+
+然后进行打包
+
+```
+yarn run build
+```
+
+:::tip
+前端项目配置最好开启 `Gzip`,可以加速前端项目访问速度。
+:::
