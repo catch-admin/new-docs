@@ -83,7 +83,9 @@ vue 后台使用了是 `element Plus` [文档地址](https://element-plus.org)
 
 ## 代码生成
 
+:::warning
 Laravel 和 tp 的代码生成功能是不一样的，默认项目使用 Laravel 的，如果需要开启 tp 的，则需要在前端项目的 `.env` 配置文件加上下面的配置
+:::
 
 ```javascript
 VITE_GENERATE = true
