@@ -52,7 +52,7 @@ composer install
 :::info
 如果安装失败，可能是 composer 源的问题，可以使用下面的命令切换到腾讯源
 
-composer config -g repos.packagist composer https://mirrors.tencent.com/composer/
+composer config repo.packagist composer https://repo.huaweicloud.com/repository/php/
 :::
 
 这个命令会自动下载并安装`CatchAdmin`项目所需要的 PHP 包。
