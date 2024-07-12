@@ -12,9 +12,9 @@ Catchcadmin V3 是一个开源的后台管理系统，它提供了一组完整�
 `Catchadmin` V3 版本服务端和前端放在一个项目中，这样会更方便开发。
 
 :::warning
-注意这是 master 分支代码木结构
+注意这是 `master` 分支代码目录结构
 
-目前 catchadmin 已经使用 server 分支开发，也作为默认分支。server 分支是完全分离的项目
+目前 catchadmin 已经使用 `server` 分支开发，也作为默认分支。`server` 分支是完全分离的项目
 :::
 
 ```
