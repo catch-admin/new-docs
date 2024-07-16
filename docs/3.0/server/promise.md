@@ -2,6 +2,10 @@
 
 **约定大于配置**， 这句名言相信很多人都听过。不管是框架还是 package 都遵循一定约定，在了解这些约定之后，开发将变得简单，`CatchAdmin` 也是，也有一些约定。开发前需要了解
 
+:::warning
+下面的约定是基于 Master 分支，目前默认分支切换到了 Server 分支，但是约定的思想不变
+:::
+
 - 后台功能约定在 `modules` 目录下
 - 模块的页面在 `modules/Permissions/views` 下
   :::info
