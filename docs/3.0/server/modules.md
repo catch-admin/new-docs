@@ -84,7 +84,7 @@ class TestServiceProvider extends CatchModuleServiceProvider
 ### 安装
 
 :::info
-如果不需要提供给别人使用的话，可以不用继续往小看了
+如果不需要提供给别人使用的话，可以不用继续往下看了
 :::
 
 如果想将模块贡献出来，供其他人使用，还需要一个安装器。安装器一般都是约定在`module`的根目录下。可以从权限模块找到相关案例。来看下权限模块的安装器
