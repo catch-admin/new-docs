@@ -70,9 +70,15 @@ php artisan serve
 当你使用 catch:install, 会自动下载前端项目，他们会被下载到根目录的 `web 目录`
 :::
 
-如果你需要单独下载前端目录，那么请到[前端项目仓库](https://gitee.com/catchadmin/catch-admin-vue.git) clone 项目
+### 手动安装前端项目
+
+如果使用 `catch:install` 安装前端项目失败，那么你可以手动安装它。[前端项目仓库](https://gitee.com/catchadmin/catch-admin-vue.git)
 
 ```shell
+git clone https://gitee.com/catchadmin/catch-admin-vue.git web
+
+cd web
+
 // 安装完 nodejs 之后，再安装 yarn
 npm install --global yarn
 
