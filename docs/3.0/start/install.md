@@ -50,27 +50,12 @@ composer install
 ```
 
 :::info
-如果安装失败，可能是 composer 源的问题，可以使用下面的命令切换到腾讯源
+如果安装失败，可能是 composer 源的问题，可以使用下面的命令切换到华为云（目前已知没有问题的源）
 
 composer config repo.packagist composer https://repo.huaweicloud.com/repository/php/
 :::
 
-这个命令会自动下载并安装`CatchAdmin`项目所需要的 PHP 包。
-除了 PHP 包之外，该项目还需要一些前端包。您可以使用以下命令安装这些包：
-
-```shell
-// 安装完 nodejs 之后，再安装 yarn
-npm install --global yarn
-
-// 安装完成之后，使用
-yarn install
-```
-
-:::tip
-如果遇到网络问题，或者安装过慢的情况，需要加上前端镜像，使用这个命令即可 `yarn config set registry https://registry.npmmirror.com`
-:::
-
-这样就可以安装所有需要的依赖包了。依赖安装完成之后，还需要安装项目的基本信息，如下
+然后使用下面的命令安装
 
 ```shell
 // 安装后台, 按照提示输入对应信息即可
@@ -79,9 +64,30 @@ php artisan catch:install
 // 启动后台
 php artisan serve
 
+```
+
+:::info
+当你使用 catch:install, 会自动下载前端项目，他们会被下载到根目录的 `web 目录`
+:::
+
+如果你需要单独下载前端目录，那么请到[前端项目仓库](https://gitee.com/catchadmin/catch-admin-vue.git) clone 项目
+
+```shell
+// 安装完 nodejs 之后，再安装 yarn
+npm install --global yarn
+
+// 安装完成之后，使用
+yarn install
+
 // 启动前端项目
 yarn dev
 ```
+
+:::tip
+如果遇到网络问题，或者安装过慢的情况，需要加上前端镜像，使用这个命令即可 `yarn config set registry https://registry.npmmirror.com`
+:::
+
+这样就可以安装所有需要的依赖包了。依赖安装完成之后，还需要安装项目的基本信息，如下
 
 :::warning
 注意不能直接访问 PHP 项目，导致 Exception，前后端分离，需要通过 API 接口形式访问，所以你需要安装 VUE 项目后台，看到数据的展示
